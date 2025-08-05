@@ -18,18 +18,13 @@ This system evaluates accessibility remediation plans using AI agents as expert 
 
 No API keys needed - generates evaluation prompts for manual LLM use:
 
-1. **Test with sample data first**:
-   ```bash
-   python simple_eval.py --audit-report data/sample-data/sample-audit-report.pdf --plans-dir data/sample-data/
-   ```
-
-2. **Add your own files**:
+1. **Add your files**:
    - Copy your audit report to `data/audit-reports/`
    - Copy your remediation plans to `data/remediation-plans/`
    - Run: `python simple_eval.py --audit-report data/audit-reports/your-audit.pdf --plans-dir data/remediation-plans/`
 
-3. **Check the results** in the `outputs/` folder
-4. **Copy the generated prompt** to ChatGPT, Claude, or your preferred LLM
+2. **Check the results** in the `outputs/` folder
+3. **Copy the generated prompt** to ChatGPT, Claude, or your preferred LLM
 
 ### Option 2: Full Automated Mode
 
@@ -52,7 +47,7 @@ The easiest way to run evaluations:
 
 1. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
 2. Type "Tasks: Run Task"
-3. Select "Test with Sample Data" to try the system, or "Evaluate Plans in Data Directory" for your own files
+3. Select "Evaluate Plans in Data Directory" to evaluate your files
 
 ## 📁 Project Data Structure
 
@@ -61,11 +56,7 @@ The project now includes a dedicated `data/` directory for all your PDF files:
 ```
 data/
 ├── audit-reports/          # Place your audit reports here
-├── remediation-plans/      # Place your remediation plans here
-└── sample-data/           # Sample files for testing
-    ├── sample-audit-report.pdf
-    ├── sample-chatgpt-plan.pdf
-    └── sample-gemini-plan.pdf
+└── remediation-plans/      # Place your remediation plans here
 ```
 
 ### Adding Your Files

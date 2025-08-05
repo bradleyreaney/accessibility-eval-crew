@@ -16,8 +16,12 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Test with sample data
-python simple_eval.py --audit-report data/sample-data/sample-audit-report.pdf --plans-dir data/sample-data/
+# Add your PDF files
+# 1. Copy your audit report to data/audit-reports/
+# 2. Copy your remediation plans to data/remediation-plans/
+
+# Run evaluation
+python simple_eval.py --audit-report data/audit-reports/your-audit.pdf --plans-dir data/remediation-plans/
 ```
 
 ## Features
@@ -71,8 +75,7 @@ accessibility-eval-crew/
 ├── prompts/             # Evaluation prompt templates
 ├── data/                # PDF files for evaluation
 │   ├── audit-reports/   # Original accessibility audit reports
-│   ├── remediation-plans/ # Plans to be evaluated
-│   └── sample-data/     # Sample files for testing
+│   └── remediation-plans/ # Plans to be evaluated
 ├── outputs/             # Generated evaluation reports
 ├── main.py              # Main execution script (full CrewAI)
 ├── simple_eval.py       # Simplified evaluation (no API keys)
@@ -92,16 +95,15 @@ The system uses weighted evaluation criteria:
 
 ### Basic Evaluation (Simplified)
 ```bash
-# Test with sample data
-python simple_eval.py --audit-report data/sample-data/sample-audit-report.pdf --plans-dir data/sample-data/
-
 # Use your own files
 python simple_eval.py --audit-report data/audit-reports/your-audit.pdf --plans-dir data/remediation-plans/
 ```
 
 ### Full Automated Evaluation
+### Automated Evaluation (Full)
 ```bash
-python main.py --audit-report data/audit-reports/your-audit.pdf --plans-dir data/remediation-plans/
+# Evaluate your plans
+python main.py
 ```
 
 ### Custom Configuration
