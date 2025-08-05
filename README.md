@@ -6,7 +6,7 @@ A CrewAI-powered system for evaluating web accessibility remediation plans using
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/accessibility-eval-crew.git
+git clone https://github.com/bradleyreaney/accessibility-eval-crew.git
 cd accessibility-eval-crew
 
 # Set up virtual environment
@@ -153,3 +153,15 @@ The system generates:
 - Python 3.8+
 - OpenAI API key (or other LLM provider)
 - PDF files for audit report and remediation plans
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## Support
+
+If you encounter any issues or have questions, please [open an issue](https://github.com/bradleyreaney/accessibility-eval-crew/issues) on GitHub.

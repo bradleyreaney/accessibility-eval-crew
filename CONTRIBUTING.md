@@ -6,7 +6,7 @@ Thank you for your interest in contributing to this project! This guide will hel
 
 1. **Fork and clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/accessibility-eval-crew.git
+   git clone https://github.com/bradleyreaney/accessibility-eval-crew.git
    cd accessibility-eval-crew
    ```
 
@@ -58,7 +58,7 @@ Thank you for your interest in contributing to this project! This guide will hel
 - Keep functions focused and small
 
 ### Testing
-- Test with sample data before submitting
+- Test the system with your own PDF files before submitting
 - Verify PDF extraction works correctly
 - Test both simple and full evaluation modes
 
